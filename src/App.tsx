@@ -39,6 +39,7 @@ const App = () => {
 
   const dragStartHandler = (task: any) => {
     setCurrentTask(task);
+    console.log('Drag started');
   };
 
   const dropHandler = async (board: number) => {
@@ -61,7 +62,7 @@ const App = () => {
 
         setCurrentBoard(0);
         setList(listCopy);
-      }, 500);
+      }, 1);
     }
   };
 
