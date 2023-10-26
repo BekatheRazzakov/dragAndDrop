@@ -39,7 +39,6 @@ const App = () => {
 
   const dragStartHandler = (task: any) => {
     setCurrentTask(task);
-    console.log('Drag started');
   };
 
   const dropHandler = async (board: number) => {
